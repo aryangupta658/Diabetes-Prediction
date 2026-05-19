@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diabetes Prediction System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-content">
+            <h2>Diabetes Prediction System</h2>
+            <p>Medical Risk Assessment</p>
+        </div>
+    </header>
+
+    <main class="main-container">
+
+        <section class="hero-section">
+            <h1>Diabetes<br><span>Prediction System</span></h1>
+
+            <div class="underline"></div>
+
+            <p class="hero-text">
+                This dashboard uses patient health details to estimate the possibility
+                of diabetes using a trained machine learning model.
+            </p>
+
+            <div class="info-list">
+                <div class="info-item">
+                    <h3>Machine Learning Model</h3>
+                    <p>Prediction based on K-Nearest Neighbors algorithm.</p>
+                </div>
+
+                <div class="info-item">
+                    <h3>Quick Assessment</h3>
+                    <p>Enter basic medical values and get an instant result.</p>
+                </div>
+
+                <div class="info-item">
+                    <h3>Simple Interface</h3>
+                    <p>Designed for easy use with clear input fields.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="form-card">
+            <h2>Enter Patient Details</h2>
+
+            <form method="POST">
+
+                <div class="input-group">
+                    <label>Glucose Level (mg/dL)</label>
+                    <input 
+                        type="number"
+                        step="any"
+                        name="glucose"
+                        value="{{ glucose }}"
+                        placeholder="Example: 120"
+                        required>
+                </div>
+
+                <div class="input-group">
+                    <label>Insulin Level (uU/mL)</label>
+                    <input 
+                        type="number"
+                        step="any"
+                        name="insulin"
+                        value="{{ insulin }}"
+                        placeholder="Example: 80"
+                        required>
+                </div>
+
+                <div class="input-group">
+                    <label>BMI (kg/m²)</label>
+                    <input 
+                        type="number"
+                        step="any"
+                        name="bmi"
+                        value="{{ bmi }}"
+                        placeholder="Example: 26.5"
+                        required>
+                </div>
+
+                <div class="input-group">
+                    <label>Age (years)</label>
+                    <input 
+                        type="number"
+                        step="any"
+                        name="age"
+                        value="{{ age }}"
+                        placeholder="Example: 32"
+                        required>
+                </div>
+
+                <button type="submit">Predict</button>
+            </form>
+
+            {% if prediction_text %}
+                <div class="result-box {{ result_class }}">
+                    {{ prediction_text }}
+                </div>
+            {% endif %}
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2025 Diabetes Prediction System. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
