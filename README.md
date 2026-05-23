@@ -37,7 +37,8 @@ This project is built to demonstrate the practical implementation of Machine Lea
 ✅ Separate messages for diabetic and non-diabetic predictions  
 ✅ Responsive and simple dashboard layout  
 ✅ Successfully deployed on Vercel  
-✅ Beginner-friendly project structure
+✅ Beginner-friendly project structure  
+✅ Ready for portfolio presentation
 
 ---
 
@@ -89,7 +90,7 @@ or
 ## 📁 Project Structure
 
 ```bash
-diabetes-prediction/
+Diabetes-Prediction/
 │
 ├── screenshots/
 │   ├── home-page.png
@@ -123,13 +124,13 @@ Follow the steps below to run this project locally on your system.
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/aryanheree/diabetes-prediction.git
+git clone https://github.com/aryangupta658/Diabetes-Prediction.git
 ```
 
 ### 2️⃣ Move into the Project Directory
 
 ```bash
-cd diabetes-prediction
+cd Diabetes-Prediction
 ```
 
 ### 3️⃣ Create a Virtual Environment
@@ -290,45 +291,19 @@ The person is likely to have Diabetes.
 
 ### 🏠 Home Page
 
-![Home Page](screenshots/home-page.png)
+![Home Page](./screenshots/home-page.png)
 
 ---
 
 ### ✅ Non-Diabetic Prediction Result
 
-![Non-Diabetic Prediction Result](screenshots/non-diabetic-result.png)
+![Non-Diabetic Prediction Result](./screenshots/non-diabetic-result.png)
 
 ---
 
 ### ⚠️ Diabetic Prediction Result
 
-![Diabetic Prediction Result](screenshots/diabetic-result.png)
-
----
-
-## 🖼️ How to Add Screenshots
-
-Create a folder named `screenshots` in your project root.
-
-```bash
-mkdir screenshots
-```
-
-Save your screenshots inside the folder with these exact names:
-
-```bash
-home-page.png
-non-diabetic-result.png
-diabetic-result.png
-```
-
-Then push the screenshots to GitHub:
-
-```bash
-git add README.md screenshots/
-git commit -m "Add README with project screenshots"
-git push
-```
+![Diabetic Prediction Result](./screenshots/diabetic-result.png)
 
 ---
 
@@ -357,7 +332,7 @@ The prediction result should not be considered as professional medical advice. A
 
 **Aryan Gupta**
 
-🔗 GitHub: [aryanheree](https://github.com/aryanheree)
+🔗 GitHub: [aryangupta658](https://github.com/aryangupta658)
 
 ---
 
@@ -369,7 +344,8 @@ The prediction result should not be considered as professional medical advice. A
 ✅ Model Integrated with Dashboard  
 ✅ GitHub Repository Created  
 ✅ Project Successfully Deployed on Vercel  
-✅ Project Completed
+✅ Project Completed  
+✅ Ready for Portfolio
 
 ---
 
